@@ -1,14 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
-const repeatCount = 5
-
-func Repeat(character string) (repeated string) {
-	
-	for i := 0; i < repeatCount; i++ {
+func Repeat(character string, repeatAmount int) (repeated string) {
+	for i := 0; i < repeatAmount; i++ {
 		repeated += character
-	} 
+	}
 	return
 }
 
